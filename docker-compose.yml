@@ -3,7 +3,7 @@ version: '3.8'
 services:
   kafka:
     image: docker.io/bitnami/kafka:3.4
-    hostname: kafka_b
+    hostname: kafka
     ports:
       - "9092:9092"
       - "9094:9094"

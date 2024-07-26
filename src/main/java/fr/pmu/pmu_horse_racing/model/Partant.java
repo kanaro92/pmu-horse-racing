@@ -1,5 +1,6 @@
 package fr.pmu.pmu_horse_racing.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.ToString;
@@ -15,6 +16,7 @@ public class Partant {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "course_id")
+    @JsonIgnore
     @ToString.Exclude
     private Course course;
 }
