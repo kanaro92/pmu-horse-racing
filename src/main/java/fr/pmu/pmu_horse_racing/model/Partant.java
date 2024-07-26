@@ -2,6 +2,7 @@ package fr.pmu.pmu_horse_racing.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.ToString;
 
 @Entity
 @Data
@@ -14,5 +15,6 @@ public class Partant {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "course_id")
+    @ToString.Exclude
     private Course course;
 }
