@@ -13,6 +13,7 @@ public class Course {
     private Long id;
     private String name;
     private String date;
+    @Column(unique = true)
     private int number;
 
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
