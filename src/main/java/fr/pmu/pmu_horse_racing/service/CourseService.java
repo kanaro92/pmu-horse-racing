@@ -25,7 +25,7 @@ public class CourseService {
         // S'assurer que les partans son numerotes correctements
         int number = 1;
         for (Partant partant : course.getPartants()) {
-            partant.setNumber(number++);
+            partant.setNumero(number++);
             partant.setCourse(course);
         }
 

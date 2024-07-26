@@ -5,32 +5,32 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="1" author="author">
+    <changeSet id="1" author="hamath">
         <createTable tableName="course">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="name" type="VARCHAR(255)">
+            <column name="nom" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
             <column name="date" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="number" type="INT">
+            <column name="numero" type="INT">
                 <constraints nullable="false" unique="true"/>
             </column>
         </createTable>
     </changeSet>
 
-    <changeSet id="2" author="author">
+    <changeSet id="2" author="hamath">
         <createTable tableName="partant">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="name" type="VARCHAR(255)">
+            <column name="nom" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
-            <column name="number" type="INT">
+            <column name="numero" type="INT">
                 <constraints nullable="false"/>
             </column>
             <column name="course_id" type="BIGINT">

@@ -11,10 +11,10 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
+    private String nom;
     private String date;
     @Column(unique = true)
-    private int number;
+    private int numero;
 
     @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
     private List<Partant> partants;
