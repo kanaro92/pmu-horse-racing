@@ -52,3 +52,6 @@ Microservice responsable du cycle de vie d’une course et de ses partants (chev
 ## Lancer les Tests
 ```sh
 ./mvnw test
+
+## Documentation swagger
+swagger-ui/index.html
