@@ -7,6 +7,9 @@ Microservice responsable du cycle de vie d’une course et de ses partants (chev
 - Java 21
 - Docker
 - Docker Compose
+- 
+## Documentation swagger
+swagger-ui/index.html
 
 ## Execution de l'application
 
@@ -53,5 +56,3 @@ Microservice responsable du cycle de vie d’une course et de ses partants (chev
 ```sh
 ./mvnw test
 
-## Documentation swagger
-swagger-ui/index.html
